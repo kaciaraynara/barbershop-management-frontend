@@ -1,0 +1,36 @@
+
+### README.md do Frontend
+
+```markdown
+# Frontend - Sistema de Gerenciamento de Barbearia
+
+Este é o frontend para o Sistema de Gerenciamento de Barbearia, construído com React, TypeScript e Tailwind CSS.
+
+## Estrutura de Arquivos
+
+- `/src/components` - Componentes reutilizáveis
+- `/src/hooks` - Hooks personalizados
+- `/src/lib` - Funções utilitárias
+- `/src/pages` - Páginas da aplicação
+- `/src/App.tsx` - Componente principal e configuração de rotas
+- `/src/main.tsx` - Ponto de entrada da aplicação
+
+## Páginas
+
+- **Dashboard** - Visão geral da barbearia com estatísticas
+- **Barbeiros** - Gerenciamento de barbeiros
+- **Serviços** - Gerenciamento de serviços oferecidos
+- **Clientes** - Gerenciamento de clientes
+- **Agendamentos** - Sistema de agendamento de horários
+- **Produtos** - Gerenciamento de estoque de produtos
+- **Vendas** - Registro de vendas (serviços e produtos)
+- **Relatórios** - Análise de desempenho
+
+## Desenvolvimento
+
+```bash
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
