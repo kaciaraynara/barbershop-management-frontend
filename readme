@@ -26,11 +26,5 @@ Este é o frontend para o Sistema de Gerenciamento de Barbearia, construído com
 - **Vendas** - Registro de vendas (serviços e produtos)
 - **Relatórios** - Análise de desempenho
 
-## Desenvolvimento
 
-```bash
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
 npm run dev
