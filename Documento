@@ -1,0 +1,156 @@
+{# Documentação do Frontend
+
+O frontend do BarberShop Management System foi desenvolvido com foco em usabilidade, performance e estética moderna. Utilizamos React com TypeScript para garantir robustez e manutenibilidade do código.
+
+## Estrutura de Diretórios
+
+```
+client/
+├── src/
+│   ├── components/        # Componentes reutilizáveis
+│   │   ├── layout/        # Componentes de layout (sidebar, header, etc)
+│   │   └── ui/            # Componentes de UI (botões, cards, etc)
+│   ├── hooks/             # Hooks personalizados
+│   ├── lib/               # Utilitários e funções auxiliares
+│   ├── pages/             # Páginas da aplicação
+│   │   ├── appointments/  # Gestão de agendamentos
+│   │   ├── barbers/       # Gestão de barbeiros
+│   │   ├── clients/       # Gestão de clientes
+│   │   ├── dashboard/     # Dashboard principal
+│   │   ├── products/      # Gestão de produtos
+│   │   ├── reports/       # Relatórios
+│   │   ├── sales/         # Gestão de vendas
+│   │   └── services/      # Gestão de serviços
+│   ├── App.tsx            # Componente principal
+│   ├── index.css          # Estilos globais
+│   └── main.tsx           # Ponto de entrada
+└── index.html             # Arquivo HTML principal
+```
+
+## Tecnologias Principais
+
+### Base
+- **React**: Biblioteca para construção de interfaces
+- **TypeScript**: Linguagem tipada para garantir código mais seguro e manutenível
+- **Vite**: Build tool para desenvolvimento rápido
+
+### UI e Estilização
+- **Tailwind CSS**: Framework CSS utilitário
+- **Shadcn UI**: Componentes de UI reutilizáveis e estilizáveis
+- **Lucide React**: Biblioteca de ícones
+
+### Gerenciamento de Estado e Requisições
+- **TanStack Query**: Gerenciamento de estado de servidor e cache
+- **React Hook Form**: Gerenciamento de formulários
+- **Zod**: Validação de esquemas
+
+### Visualização de Dados
+- **Recharts**: Biblioteca de gráficos para React
+
+## Principais Componentes
+
+### Layout
+- **Layout**: Estrutura base da aplicação com sidebar, header e conteúdo principal
+- **Sidebar**: Navegação principal
+- **Header**: Barra superior com título da página e ações
+- **MobileMenu**: Menu para dispositivos móveis
+
+### UI Reutilizáveis
+- **DataTable**: Tabela de dados com recursos de pesquisa e ordenação
+- **Calendar**: Componente de calendário para agendamentos
+- **Form**: Componentes de formulário com validação
+
+## Páginas Principais
+
+### Dashboard
+Visão geral do negócio com métricas e gráficos importantes:
+- Total de agendamentos do dia
+- Clientes atendidos
+- Receita diária
+- Desempenho dos barbeiros
+- Serviços mais populares
+
+### Agendamentos
+Interface para gerenciar os horários dos clientes:
+- Visualização de agenda
+- Formulário de agendamento
+- Filtros por data, barbeiro e serviço
+
+### Clientes
+Gerenciamento dos clientes da barbearia:
+- Lista de clientes
+- Formulário de cadastro
+- Histórico de atendimentos
+
+### Barbeiros
+Gerenciamento da equipe de profissionais:
+- Lista de barbeiros
+- Formulário de cadastro
+- Métricas de desempenho
+
+### Serviços
+Cadastro dos serviços oferecidos:
+- Lista de serviços
+- Formulário de cadastro
+- Categorização e precificação
+
+### Produtos
+Controle de estoque e vendas de produtos:
+- Lista de produtos
+- Formulário de cadastro
+- Controle de estoque
+
+### Vendas
+Registro de transações financeiras:
+- Lista de vendas
+- Formulário de venda
+- Relatórios financeiros
+
+### Relatórios
+Análises e métricas de desempenho:
+- Relatórios financeiros
+- Relatórios de agendamentos
+- Relatórios de clientes
+
+## Fluxo de Dados
+
+1. **Obtenção de Dados**: 
+   - Utilizamos TanStack Query para buscar dados do backend
+   - Cada recurso (clientes, barbeiros, etc.) possui seu próprio hook de query
+
+2. **Manipulação de Dados**:
+   - Formulários com React Hook Form e validação Zod
+   - Mutações com TanStack Query para criar, atualizar e excluir dados
+
+3. **Cache e Invalidação**:
+   - Gerenciamento automático de cache com TanStack Query
+   - Invalidação de caches relacionados após mutações
+
+## Medidas de Segurança
+
+- **Sanitização de Input**: Prevenção de XSS com sanitização de strings
+- **Validação de Dados**: Validação rigorosa com Zod
+- **Proteção contra CSRF**: Tokens de segurança em requisições sensíveis
+
+## Responsividade
+
+A interface foi desenvolvida seguindo o princípio de Mobile First:
+- Layout responsivo com Tailwind CSS
+- Menu mobile para telas pequenas
+- Componentes adaptáveis a diferentes tamanhos de tela
+
+## Extensibilidade
+
+O código foi estruturado para facilitar futuras adições:
+- Componentes modularizados
+- Hooks reutilizáveis
+- Tipagem forte com TypeScript
+
+## Performance
+
+- Lazy loading de componentes
+- Memoização de cálculos intensivos
+- Otimização de renderização com useMemo e useCallback
+- Gerenciamento eficiente de cache com TanStack Query
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+}
